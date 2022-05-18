@@ -1,0 +1,118 @@
+
+     /* let js='Amazing';
+      if(js==='Amazing'){
+        alert('Javascript is fun!!')
+      }
+
+      console.log(5+8+9);
+      */
+     /*
+     let javaScript=true;
+     console.log(javaScript);
+     console.log(typeof true);
+     console.log(typeof javaScript);
+     console.log(typeof 'hello');
+     console.log(typeof 12);
+     javaScript='Hello'
+     console.log(typeof javaScript);
+     */
+    /*let age=20;
+    age=45;
+     console.log(age);4*/
+
+     //Coding challenge 1
+    /* let markH=78
+     let markW = 1.69
+     let JohnH = 92
+     let JohnW = 1.95
+     let BMI= (markH/ (markW ** 2))
+     let BMI2 = (JohnH) / (JohnW * JohnW)
+    let makHigherBMI = BMI > BMI2
+  console.log(makHigherBMI) */
+/*const age=9;
+const isEnough = age>=18;
+const yearsLeft = 18-age;
+if(isEnough)
+{
+  console.log("Yes you can drive ")
+}
+else{
+
+  console.log(`Too young ${yearsLeft} years left`);
+}*/
+
+//coding challenge 2
+/*let markH=78
+     let markW = 1.69
+     let JohnH = 92
+     let JohnW = 1.95
+     let BMI= (markH/ (markW ** 2))
+     let BMI2 = (JohnH) / (JohnW * JohnW)
+
+if(BMI> BMI2)
+{
+  console.log("Mark")
+}
+else
+{
+  console.log("John")
+}
+*/
+/*const hasDriverLicense=true;
+const hasGoodVision = false;
+if(hasDriverLicense && hasGoodVision)
+console.log("Yes you can drive");
+else
+console.log("Someone else should drive");*/
+
+//coding challenge 3
+/*const Dol= ((97+112+101)/3);
+const Koal= ((101+111+98)/3);
+if(Dol >= 100 && Koal >= 100 && Dol === Koal)
+{
+  console.log("It's a draw");
+}
+else if(Dol>= 100 && Dol> Koal)
+{
+  console.log(`Winner is Dol ${Dol} `);
+}
+else if(Koal>=100 && Koal>Dol){
+  console.log(`Winner is Koal ${Koal}`);
+}
+else
+{
+  console.log("No one is winner");
+}
+*/
+//Switch Case
+/*
+ const day='thursday';
+ switch(day){
+case 'monday':
+  console.log('Plan course structure');
+  console.log('Go to coding meetup');
+  break;
+  case 'tuesday':
+    console.log('Prepare theory videos');
+    break;
+  case 'wednesday' :
+    case 'thursday':
+    console.log('write code');
+    break;
+    case 'friday':
+      console.log('Record');
+      break;
+      case 'saturday':
+        case 'sunday':
+        console.log('Enjoy');
+        break;
+        default:
+          console.log('Not a valid day');
+ }
+ */
+// challenge 4
+const bill = 275
+
+let tip = bill>=50 && bill<=300 ? ((bill*15)/100) : ((bill*20)/100);
+const s=bill+tip;
+console.log(bill +' '+ tip+' '+s);
