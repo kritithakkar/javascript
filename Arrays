@@ -1,0 +1,55 @@
+const friends= ['Michel','Peter','Steven'];
+console.log(friends);
+ const year = new Array('1991','1998','1761');
+ console.log(year[0]);
+ //length
+ console.log(year.length);
+//index of last element
+console.log(friends[friends.length-1]);
+friends[2]='jay';
+console.log(friends);
+
+const firstName='Jonas';
+const jonas=[firstName,'Hellen', 2037-1991, 'teacher',friends];
+console.log(jonas);
+
+const calcAverage=function(birthyear)
+{
+    return 2037-birthyear;
+}
+const years = [1990,1967,2002,2010,2018];
+console.log(calcAverage(year));//It will not work bcz it expects to
+//take only one value bot given array as an argument 
+//output-NaN
+
+const age1=calcAverage(years[1]);
+const age2=calcAverage(years[2]);
+console.log(age1,age2);
+
+
+const friends1=['Mioche','john','neetu'];
+const l=friends1.push('reeyy');//store elememnt at the last
+ console.log(friends1);
+ console.log(l);
+ friends1.unshift('tina');
+ console.log(friends1);//adds element in the front
+ //remove elements
+ const f=friends1.pop();//remove last element 
+ console.log(friends1);
+ console.log(f);
+  friends1.shift();//first element removed
+  console.log(friends1);
+  console.log(friends1.indexOf('john'));//gives index of an element
+  console.log(friends1.includes('neetu'));//returns true/false if element is present or not
+
+  //Assignment
+ const calcTip= function(bill){
+     return bill>=50 && bill<=300 ? bill*0.15: bill*0.2;
+ }
+//or
+// const caclTip = bill=> bill >= 50 && bill <=300?
+// bill * 0.15 : bill *0.2;
+   const bills = [125,555,44];
+   const tips=[calcTip(bills[0]),calcTip(bills[1]),calcTip(bills[2])];
+   const totals = [bills[0]+ tips[0], bills[1]+tips[1], bills[2]+ tips[2]];
+   console.log(bills,tips);
