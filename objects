@@ -1,0 +1,15 @@
+const jones = {
+    firstName:'Jones',
+    lastName:'Dell',
+    age:2037-1991,
+    job:'teacher',
+    friends:['michel','neeta']
+};
+console.log(jones);
+console.log(jones.lastName);//dot notation
+console.log(jones['lastName']);//bracket notation
+const nameKey='Name';
+console.log(jones['first'+nameKey]);
+console.log(jones['last'+nameKey]);
+const s= prompt('What do you want to know about jones choose b/w age, firstname,lastname,job,friends ?');
+console.log(jones[s]);
