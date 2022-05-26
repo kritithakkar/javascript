@@ -1,0 +1,46 @@
+for(let i=0;i<jones.length;i++)
+{
+    if(typeof jones[i] !== 'string')
+    continue;
+    console.log(jones[i], typeof jones[i]);
+}
+const years=[1991,2007,1969,2020];
+const ages=[];
+for(let i=0;i<years.length;i++)
+{
+    ages.push(2037-years[i]);
+}
+console.log(ages);
+//only strings
+//continue
+for(let i=0;i<jones.length;i++)
+{
+    if(typeof jones[i] !== 'string')
+    continue;
+    console.log(jones[i], typeof jones[i]);
+}
+
+//break
+for(let i=0;i<jones.length;i++)
+{
+    if(typeof jones[i] == 'number')
+    break;
+    console.log(jones[i], typeof jones[i]);
+}
+//backkward loop
+for(let i=jones.length-1;i>=0;i--)
+{
+    console.log(jones[i]);
+}
+
+//loop inside a loop
+for(let i=0;i<4;i++)
+{
+    console.log(`---exercise start ${i}`);
+    for(let j=1;j<6;j++)
+    {
+        console.log(`Exercise ${i} Lifting weight ${j}`);
+    }
+}
+
+
