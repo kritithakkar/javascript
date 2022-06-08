@@ -1,0 +1,40 @@
+//function along with the lexical environment forms closure
+function x() {
+  var a = 7;
+  function y() {
+    console.log(a);
+  }
+  return y;
+}
+var z = x();
+console.log(z); // f y(){ console.log(a);}
+z();
+// 7
+
+function x(){
+var a=7;
+function y(){
+console.log(a);
+}
+a=100;
+return y;
+}
+var z=x();
+console.log(z);
+z();
+//f y(){ console.log(a);} 
+// 100
+
+function z() {
+  var b = 900;
+  function x() {
+    var a = 7;
+    function y() {
+      console.log(a);
+      console.log(b);
+    }
+    y();
+  }
+  x();
+}
+z();
