@@ -1,0 +1,55 @@
+ function outer() {
+   var a = 10;
+   function inner() {
+    console.log(a);
+  }
+   return inner;
+ }
+ outer()();// outer() it for returning inner function outer()() for calling inner func
+ ==  10 
+OR
+function outer() {
+  var a = 10;
+  function inner() {
+    console.log(a);
+  }
+  return inner;
+}
+var close = outer();
+close();
+== 10
+// position of var a is changed 
+function outer() {
+  function inner() {
+    console.log(a);
+  }
+    var a = 10;
+  return inner;
+}
+var close = outer();
+close();
+== 10
+
+// var is replaced by let
+function outer() {
+  function inner() {
+    console.log(a);
+  }
+    let a = 10;
+  return inner;
+}
+var close = outer();
+close();
+== 10
+
+// if we pass parameter with outer func
+function outer(b) {
+  function inner() {
+    console.log(a,b);
+  }
+    let a = 10;
+  return inner;
+}
+var close = outer("helloworld");
+close();
+== 10 helloworld
